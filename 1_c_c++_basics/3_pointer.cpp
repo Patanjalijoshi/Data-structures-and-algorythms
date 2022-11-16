@@ -12,14 +12,14 @@ int main()
     
     int B[5] = {1,2,3,4,5};
     int *x;
-    x = B; // there is no ned for '&' whicle creating a pointer to an array
+    x = B; // there is no ned for '&' while creating a pointer to an array
     for(int i =0; i<5;i++){
         cout<<x[i]<<endl;
 
     }
     
     
-     // size od pointer is always 8 bytes
+     // size of pointer is always 8 bytes
      cout<<sizeof(x);
     
     return 0;

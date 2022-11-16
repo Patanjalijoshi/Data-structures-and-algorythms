@@ -7,7 +7,7 @@ class rectangle
 { 
 private:
     t length;
-    t bredth;
+    t breadth;
 
 
 public:
@@ -20,14 +20,14 @@ template<class t>
 
 rectangle<t> :: rectangle(t a, t b)
 {
-    this->bredth = b;
+    this->breadth = b;
     this->length = a;
     
 } 
 template <class t>
 t rectangle<t>::area()
 { 
-    return bredth*length;
+    return breadth*length;
 
 }
 

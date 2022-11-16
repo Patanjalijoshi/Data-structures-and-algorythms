@@ -11,29 +11,29 @@
 // struct rectangle 
 // {
 //     int length;
-//     int bredth;
+//     int breadth;
 
 // };
-// //dynamically allocating memory to a rectangle and initializes the length and the bredth 
+// //dynamically allocating memory to a rectangle and initializes the length and the breadth 
 // struct rectangle *init(int a, int b)
 // {
 //     struct rectangle *r;        
 //     r = new rectangle;
-//     r->bredth = b;
+//     r->breadth = b;
 //     r->length = a;
 //     return r;
 // } 
 
 // void area(struct rectangle *r)
 // { 
-//     cout<<"Area of the rectangle = "<<r->bredth*r->length<<endl;
+//     cout<<"Area of the rectangle = "<<r->breadth*r->length<<endl;
 
 // }
 
 
 // int main()
 // {   int x,y;
-//    cout<<"enter the length and the bredth of the rectangle"<<endl;
+//    cout<<"enter the length and the breadth of the rectangle"<<endl;
 //    cin>>x>>y; 
 //    struct rectangle *ptr = init(x,y);
 //    area(ptr);
@@ -51,20 +51,20 @@ class rectangle
 { 
 private:
     int length;
-    int bredth;
+    int breadth;
 
 
 public:
   void init (int a, int b)
 {
-    bredth = b;
+    breadth = b;
     length = a;
     
 } 
 
   void area()
 { 
-    cout<<"Area of the rectangle = "<<bredth*length<<endl;
+    cout<<"Area of the rectangle = "<<breadth*length<<endl;
 
 }
 };
@@ -73,7 +73,7 @@ public:
 int main()
 {   int x,y;
     rectangle r;
-   cout<<"enter the length and the bredth of the rectangle"<<endl;
+   cout<<"enter the length and the breadth of the rectangle"<<endl;
    cin>>x>>y; 
    
    r.init(x,y);

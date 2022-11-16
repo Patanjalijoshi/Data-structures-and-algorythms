@@ -1,4 +1,4 @@
-// this is about passing arrays as paremeters
+// this is about passing arrays as parameters
 #include<iostream>
 using namespace std;
 
@@ -35,4 +35,4 @@ int main()
     return 0;
 }
 
-// only array address can be passed not the entier array
+// only array address can be passed not the entire array

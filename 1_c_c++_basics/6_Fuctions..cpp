@@ -90,4 +90,4 @@ int main(){
 
 // call by value only the values are passed 
 //in call by reference the variables are reference by another name there is no new variable created
-// in call by address the address of the two variable is passed and swaped 
+// in call by address the address of the two variable is passed and swapped 

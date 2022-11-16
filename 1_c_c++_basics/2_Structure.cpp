@@ -6,7 +6,7 @@ using namespace std;
 struct rectangle
 {
   float length;
-  float bredth;
+  float breadth;
 } r;
 
 //struct rectangle r;
@@ -15,7 +15,7 @@ int main()
 {
     //struct rectangle r;
     r = {3.3,4.4};
-    cout<<"area of the rectangle = "<<r.bredth*r.length;
+    cout<<"area of the rectangle = "<<r.breadth*r.length;
 
     return 0;
 }

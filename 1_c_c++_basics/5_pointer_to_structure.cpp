@@ -6,7 +6,7 @@ using namespace std;
 struct rectangle
 {
     int length;
-    int bredth;
+    int breadth;
 
 };
 
@@ -18,10 +18,10 @@ int main()
     struct rectangle *p;
     p = new rectangle;
     
-    p->bredth = 13;
+    p->breadth = 13;
     p->length = 22;
     
-    cout<<p->bredth<<endl;
+    cout<<p->breadth<<endl;
     cout<<p->length<<endl;
     return 0;
 } 

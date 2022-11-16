@@ -1,11 +1,11 @@
-// this is about passing structure as a paremeter
+// this is about passing structure as a parameter
 #include<iostream>
 using namespace std;
 
 struct rectangle
 {
   int length;
-  int bredth;
+  int breadth;
 };
 
 struct arr
@@ -17,7 +17,7 @@ struct arr
 //pass by value
 // void fun(struct rectangle r)
 // {
-//     cout<<r.bredth<<" "<<r.length;
+//     cout<<r.breadth<<" "<<r.length;
 
 // }
 
@@ -25,7 +25,7 @@ struct arr
 // int main()
 // {   
 //     rectangle r={10,5};
-//     cout<<r.bredth<<" "<<r.length;
+//     cout<<r.breadth<<" "<<r.length;
 //     fun(r);
 //     return 0;
 // }
@@ -33,15 +33,15 @@ struct arr
 //pass by address
 // void fun(struct rectangle *P)
 // {
-//     cout<<P->bredth<<" "<<P->length<<endl;
-//    // cout<<P->bredth*P->length<<endl;
+//     cout<<P->breadth<<" "<<P->length<<endl;
+//    // cout<<P->breadth*P->length<<endl;
 // }
 
 
 // int main()
 // {   
 //     rectangle r={10,5};
-//     cout<<"\n"<<r.bredth<<" "<<r.length<<endl;
+//     cout<<"\n"<<r.breadth<<" "<<r.length<<endl;
 //     fun(&r);
 //     return 0;
 // }
@@ -52,7 +52,7 @@ struct arr
 //   struct rectangle *p;
 //   p = new rectangle;
 
-//   p->bredth = 13;
+//   p->breadth = 13;
 //   p->length = 20;
 
 //   return p;
@@ -62,7 +62,7 @@ struct arr
 // {
 //     struct rectangle *ptr=fun();
 
-//     cout<<ptr->bredth<<" "<<ptr->length;
+//     cout<<ptr->breadth<<" "<<ptr->length;
 
 //     return 0;
 // }

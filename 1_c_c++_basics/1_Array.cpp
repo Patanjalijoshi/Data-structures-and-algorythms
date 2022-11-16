@@ -1,5 +1,5 @@
 // this program is about understanding the basics of arrays
-//take input from user and fill up an array and display usingfor each loop 
+//take input from user and fill up an array and display using for each loop 
 #include<iostream>
 using namespace std;
 int main()
