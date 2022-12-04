@@ -1,4 +1,4 @@
-// this is all about indirect recurssion
+// this is all about indirect recursion
 // there are two functions that call eachother to making an indirect recursion
 #include<iostream>
 using namespace std;

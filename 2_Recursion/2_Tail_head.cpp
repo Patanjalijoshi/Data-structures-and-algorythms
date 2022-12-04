@@ -12,7 +12,7 @@ using namespace std;
 //     }
 // }
 
-//head recurssion
+//head recursion
 // no operations are performed at the time of function call
 // all operations are performed at return time
 void fun(int n)
