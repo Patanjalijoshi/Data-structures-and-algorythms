@@ -8,7 +8,7 @@ int main()
 
 int A[2][2] = {{1,2},{3,4}};
 
-// the other mmethod declare a 2D array uses pointers 
+// the other method declare a 2D array uses pointers 
 
 int *B[2];
 // now to make it 2D in nature the memory is assigned in heap 
@@ -18,7 +18,7 @@ B[1] = new int[2];
 // this allocates memory in the heap creating a 2D array with 2 rows and 2 columns
 
 
-// Creating 2D array with a double pointer which ccreates the entier array in heap
+// Creating 2D array with a double pointer which creates the entier array in heap
 
 int **C;
 

@@ -69,7 +69,7 @@ else
 
 int main()
 { 
-    // initialsising an array 
+    // initialising an array 
     int n, i;
     int append = 10;
     int index = 4;
@@ -95,7 +95,7 @@ int main()
     }
     arr.length = n;
     
-    // calling diaplay function
+    // calling display function
     cout<<"Elements present in the array"<<endl;
     Display(arr);
     
