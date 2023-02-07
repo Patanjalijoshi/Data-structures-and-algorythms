@@ -1,4 +1,4 @@
-// this is about understanding how to create a template class
+ // this is about understanding how to create a template class
 #include<iostream>
 using namespace std;
 

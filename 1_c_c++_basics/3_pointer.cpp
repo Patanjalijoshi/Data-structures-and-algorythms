@@ -8,7 +8,7 @@ int main()
     int *p;
     p = &a;
     cout<<"address of the variable a = "<<p<<endl;
-    cout<<"the value stored at the address location "<<*p;
+    cout<<"the value stored at the address location "<<*p<<endl;
     
     int B[5] = {1,2,3,4,5};
     int *x;

@@ -72,7 +72,7 @@ public:
 
 int main()
 {   int x,y;
-    rectangle r;
+    rectangle r;                  //creating an object r 
    cout<<"enter the length and the breadth of the rectangle"<<endl;
    cin>>x>>y; 
    
