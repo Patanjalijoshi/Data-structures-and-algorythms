@@ -2,7 +2,7 @@
 #include<iostream>
 using namespace std;
 
-int *create(int size){
+int *create(int size){   //this function gives an integer type pointer as output hence the * before the function name
     int *p;
     p = new int[size];
     
