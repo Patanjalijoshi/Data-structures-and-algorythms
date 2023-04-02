@@ -14,9 +14,11 @@ int main()
         cin>>element;
         A[i]=element;
     }
+
     // using the for each loop to print the array 
     for(int x : A)
     cout<<x<<" ";
     
     return 0;
 }
+

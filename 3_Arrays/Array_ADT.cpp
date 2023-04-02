@@ -7,20 +7,19 @@ using namespace std;
 
 struct array
 {
-    int *A;
-  //  int A[10];
-    int size;
-    int length;
+  int *A;
+  int size;
+  int length;
 };
 
 // function to display all the elements in an array
 void Display(struct array arr)
-{  cout<<"the elements in the array are"<<endl;
-    for(int i = 0; i<arr.length; i++)
-    {
-        
-        cout<<arr.A[i]<<"\t";
-    }
+{
+  cout<<" The elements in the array are:"<<endl;
+  for(int i = 0; i < arr.length; i++)
+  {
+    cout<<arr.A[i]<<"\t";
+  }
 }
 
 // function to add/append an array
@@ -40,30 +39,59 @@ void Append(struct array *arr, int x)  //pass by address if there are changes be
 }
 
 //function to insert an element at a given index
-void Insert(struct array *arr, int index, int x)
-{   
-    int i;
-if(arr->length< arr->size)             
-{
-      if(index >= 0 && index < arr->length)  // in order to insert the index should between the first and the last element of the array
-      {
-       for( i = arr->length; i > index; i--)
+void Insert(struct array *arr, int index, int x )
+{ 
+  int i;
+  if(arr->size > arr->length)
+  {
+    if(index >= 0 && index <= arr->length )
+    {
+      for( i = arr->length; index<=arr->length; i-- )
       {
         arr->A[i] = arr->A[i-1];
       }
-    // Inserting the element in the empty space
-       arr->A[i] = x;
-       arr->length++;
-       }
-       else
-       {
-       cout<<"Index out of range"<<endl;
-       }
-} 
-else
-{
- cout<<"Insufficient size"<<endl;
+      arr->A[i] = x;
+      arr->length++;
+    }
+    else
+    {
+      cout<<"index out of range"<<endl;
+    }
+  }
+  else
+  {
+    cout<<"insufficient size"<<endl;
+  }
 }
+
+//deletinon from an array
+int Delete( struct array *arr, int index )
+{
+   int x = 0 ;
+   if(index > 0 && index < arr->length)
+   {
+    x = arr->A[index];
+   for(int i = index; i < arr->length-1; i++)
+   {
+     arr->A[i] = arr->A[i+1];
+   }
+   return x; // x will be retturned if the condition is true 
+   }
+   return 0; // if the condition is false then 0 is returned  because no element will be deleted
+}
+int linearsearch(struct array *arr, int search)
+{
+ 
+  for(int i = 0; i < arr->length; i++)
+  {
+    if(arr->A[i] == search)
+    {
+      return i;
+    }
+    
+
+  }
+  return -1;
 }
 
 
@@ -74,6 +102,7 @@ int main()
     int append = 10;
     int index = 4;
     int x = 30;
+    int search, result;
     struct array arr;
     // struct array arr = {{1,2,3,4,5},20,5};  // pre defined array 
     
@@ -109,6 +138,24 @@ int main()
     Insert(&arr, index, x);
     cout<<"\nArray after Inserting"<<endl;
     Display(arr);
+
+    //calling the delete function 
+    cout<<"\n"<<Delete(&arr, index);
+    cout<<"\nArray after deleting the element"<<endl;
+    Display(arr);
+
+    //performing linear search in an array
+    cout<<"\n the element that needs to be searched";
+    cin>>search;
+    result = linearsearch(&arr,search);
+    if(result >= 0)
+    {
+      cout<<"\n Element is found at "<<result;
+    }
+    else
+    {
+      cout<<"\n Element not found";
+    }
 
     return 0;
 }
