@@ -36,16 +36,13 @@ int recurssion_binarysearch(int *array,  int element, int h, int l)
         {
             recurssion_binarysearch(array, element, mid-1, l);
         }
-        else if(element > array[mid])
+        else
         {
              recurssion_binarysearch(array, element, h, mid+1);
         }
-        else
-        {
-            return -1;
-        }
-          
-    }
+        
+     }
+      return -1;
    
 }
 
