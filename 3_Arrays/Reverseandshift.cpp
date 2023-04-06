@@ -52,7 +52,7 @@ void leftshift(struct array *arr)
     for( int i = 1; i < arr->length; i++)
     {
         arr->a[i-1] = arr->a[i];
-        arr->a[arr->length - 1] = NULL;
+        arr->a[arr->length - 1] = 0;
     }
 }
 void leftrotate(struct array *arr)  //figure oyt how to fix the segmentatin fault
